@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/heavenly-handmade/static/css/main.c8036cfa.css",
+    "main.js": "/heavenly-handmade/static/js/main.82d15e69.js",
+    "static/js/787.32c28651.chunk.js": "/heavenly-handmade/static/js/787.32c28651.chunk.js",
+    "static/media/jewel 1.webp": "/heavenly-handmade/static/media/jewel 1.20f0bc64fd7ab2a02f3c.webp",
+    "static/media/CentraNo2-Bold.ttf": "/heavenly-handmade/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
+    "static/media/CentraNo2-Medium.ttf": "/heavenly-handmade/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
+    "static/media/CentraNo2-Book.ttf": "/heavenly-handmade/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
+    "static/media/jewel ban.webp": "/heavenly-handmade/static/media/jewel ban.9f10361aa23ef04cd3ac.webp",
+    "static/media/j2.webp": "/heavenly-handmade/static/media/j2.9b1bf9f941eb338e5b88.webp",
+    "static/media/j3.webp": "/heavenly-handmade/static/media/j3.af7c7421a5c3b6adb32c.webp",
+    "static/media/j1.webp": "/heavenly-handmade/static/media/j1.25333355b71fba3cf0d2.webp",
+    "static/media/nav-icon.svg": "/heavenly-handmade/static/media/nav-icon.f7cf28744ffa89f2cd1cef105455508e.svg",
+    "static/media/nav-icon3.svg": "/heavenly-handmade/static/media/nav-icon3.08b285abb8e118b52637efa5d65c5367.svg",
+    "index.html": "/heavenly-handmade/index.html",
+    "static/media/nav-icon2.svg": "/heavenly-handmade/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
+    "main.c8036cfa.css.map": "/heavenly-handmade/static/css/main.c8036cfa.css.map",
+    "main.82d15e69.js.map": "/heavenly-handmade/static/js/main.82d15e69.js.map",
+    "787.32c28651.chunk.js.map": "/heavenly-handmade/static/js/787.32c28651.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8036cfa.css",
+    "static/js/main.82d15e69.js"
+  ]
+}
