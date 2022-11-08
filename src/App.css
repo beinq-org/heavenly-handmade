@@ -1,3 +1,79 @@
+@import url('https:fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/**********************/
+/*****Custom Fonts*****/
+/**********************/
+
+@font-face {
+  font-family: Centra;
+  src: url(./assets/font/CentraNo2-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url(./assets/font/CentraNo2-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Centra;
+  src: url(./assets/font/CentraNo2-Book.ttf);
+  font-weight: 400;
+}
+
+/**********************/
+/*****Custom Fonts*****/
+/**********************/
+
+/*******************/
+/*****Added CSS*****/
+/*******************/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background: white !important;
+  /**background: linear-gradient(90.21deg, #0e0f0e -5.91%, #000000 111.58%) !important;*/
+  background-size: cover !important;
+  color: #eee !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
+}
+
+/*******************/
+/*****Added CSS*****/
+/*******************/
+
+/*********************/
+/*****Default CSS*****/
+/*********************/
+
 .App {
   text-align: center;
 }
@@ -36,3 +112,529 @@
     transform: rotate(360deg);
   }
 }
+
+/*********************/
+/*****Default CSS*****/
+/*********************/
+
+/********************/
+/*****NavBar CSS*****/
+/********************/
+
+nav h1 {
+  color: #eee;
+}
+
+nav.Navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: 0.32 ease-in-out;
+}
+
+nav.navbar.scrolled {
+  padding: 0 0;
+  background-color: #121212;
+}
+
+nav.navbar a.navbar-brand {
+  width: 9%;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #eee !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link:hover,
+nav.navbar .navbar-nav .nav-link.navbar-link:active {
+  opacity: 1;
+}
+
+span.navbar-text {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 47%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #eee;
+  border-radius: 47%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+
+.social-icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: 00.3s ease-in-out;
+}
+
+.social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+  box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+nav.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #fff;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+/********************/
+/*****NavBar CSS*****/
+/********************/
+
+/********************/
+/*****Banner CSS*****/
+/********************/
+
+.banner {
+  margin-top: 0;
+  padding: 0px 0 0px 0;
+  background-image: url('./assets/img/jewel\ 1.webp');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .tagline {
+  padding-top: 125px;
+  letter-spacing: 0.8px;
+  background: linear-gradient(90.21deg, #1F012B -5.91%, #020536 111.58%, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0);
+  font-size: 20px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #dff1ff;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 25px 0;
+  color: #dba21c;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #fff;
+  font-size: 18px;
+  color: #dff1ff;
+  font-weight: 200;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 95%;
+  padding-bottom: 100px;
+}
+
+/********************/
+/*****Banner CSS*****/
+/********************/
+
+/*********************/
+/*****Product CSS*****/
+/*********************/
+
+#product {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#product h2{
+  font-size: 47px;
+  color: #475b7d;
+}
+
+#product p{
+  padding: 20px;
+  color: #475b7d;
+}
+
+#product .pro-container {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  row-gap: 50px;
+  justify-content: space-between;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+#product .pro {
+  width: 28%;
+  min-width: 400px;
+  padding: 10px 12px;
+  border: 4px solid #dff1ff;
+  border-top-left-radius: 47px;
+  border-bottom-right-radius: 47px;
+  box-shadow: 7px 7px 15px rgba(24,49,79,.47);
+  margin: 15px 0;
+  transition: 0.02s ease;
+}
+
+#product .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product .pro .des span {
+  color: #475b7d;
+  font-size: 12px;
+}
+
+#product .pro .des h5 {
+  color: #475b7d;
+  font-size: 14px;
+  padding-top: 7px;
+}
+
+#product .pro .des i {
+  color: #dba21c;
+  font-size: 12px;
+}
+
+#product .pro .des h4 {
+  color: #dba21c;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 7px;
+}
+
+.pro #btn{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.pro #btn a {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 4px solid #dff1ff;
+  border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px;
+  box-shadow: 5px 5px 7px rgba(24,49,79,.17);
+  padding: 15px;
+  color: #dba21c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.pro #btn a:hover{
+  border-radius: 0;
+  transition-duration: 1s ease-out;
+  transform: scale(1.25);
+  cursor: pointer;
+}
+
+/*********************/
+/*****Product CSS*****/
+/*********************/
+
+/**************************/
+/*****Announcement CSS*****/
+/**************************/
+
+#promotion {
+  padding: 100px 0 50px 0;
+  background-image: url('./assets/img/jewel\ ban.webp');
+  background-position: center;
+}
+
+
+/**************************/
+/*****Announcement CSS*****/
+/**************************/
+
+/*********************/
+/*****Contact CSS*****/
+/*********************/
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, input, select, textarea {
+  color: #475b7d;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#contact {
+  border: solid 4px #475b7d;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+#contact h1 {
+  color: #475b7d;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #475b7d;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #475b7d;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='text'], [type='email'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #475b7d;
+	color: #dba21c;
+	font-size: 1.000em;
+  font-weight: 500;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, [type='email']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+  padding: 25px 0;
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #475b7d;
+}
+
+:-moz-placeholder { 
+	color: #475b7d;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #475b7d;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #475b7d;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #475b7d;
+  color: #475b7d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #475b7d;
+  color: #dff1ff;
+}
+
+/*********************/
+/*****Contact CSS*****/
+/*********************/
+
+/********************/
+/*****Footer CSS*****/
+/********************/
+
+.footer {
+  padding: 100px 0 50px 0;
+  background-image: url('./assets/img/jewel\ ban.webp');
+  background-position: center;
+}
+.footer img {
+  width: 26%;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+/********************/
+/*****Footer CSS*****/
+/********************/
